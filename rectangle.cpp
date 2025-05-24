@@ -1,5 +1,6 @@
 #include "rectangle.h"
 #include <sstream>
+using namespace std;
 
 Rectangle::Rectangle() : _upperLeft(Point(0, 0)), _width(0), _height(0) {}
 
@@ -15,7 +16,7 @@ double Rectangle::Perimeter() const {
 }
 
 std::string Rectangle::ToString() const {
-    std::ostringstream out;
+    ostringstream out;
     out << "UpperLeft: (" << _upperLeft.GetX() << ", " << _upperLeft.GetY() << ") ";
     out << "Width: " << _width << " Height: " << _height;
     return out.str();
