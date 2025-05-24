@@ -1,10 +1,12 @@
 #include "square.h"
 #include <sstream>
+#include <string>
+using namespace std;
 
 Square::Square(double side) : Rectangle(Point(0, 0), side, side) {}
 
-std::string Square::ToString() const {
-    std::ostringstream out;
+string Square::ToString() const {
+    ostringstream out;
     out << "This is a square. " << Rectangle::ToString();
     return out.str();
 }
