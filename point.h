@@ -6,7 +6,7 @@ private:
     double _x;
     double _y;
 
-public:
+public: 
     Point();
     Point(double x, double y);
     double GetX() const;
