@@ -3,11 +3,12 @@
 
 #include "rectangle.h"
 #include <string>
+using namespace std;
 
 class Square : public Rectangle {
 public:
     Square(double side);
-    std::string ToString() const;
+    string ToString() const;
 
     // 1. What happened when you removed the Rectangle::ToString()?
     // The program still runs, but it doesn't show the rectangle's information anymore.
