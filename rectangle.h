@@ -4,7 +4,7 @@
 #include "point.h"
 #include <string>
 
-class Rectangle {
+class Rectangle { 
 protected:
     Point _upperLeft;
     double _width;
