@@ -1,10 +1,11 @@
 #include <iostream>
 #include "square.h"
+using namespace std;
 
 int main() {
     Square s(5.0);
-    std::cout << s.ToString() << std::endl;
-    std::cout << "Area: " << s.Area() << std::endl;
-    std::cout << "Perimeter: " << s.Perimeter() << std::endl;
+    cout << s.ToString() <<endl;
+    cout << "Area: " << s.Area() <<endl;
+    cout << "Perimeter: " << s.Perimeter() <<endl;
     return 0;
 }
